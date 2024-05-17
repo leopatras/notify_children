@@ -1,0 +1,40 @@
+From c8726036875c212a9e4b93c28b63337353d73fd6 Mon Sep 17 00:00:00 2001
+From: Leo Schubert <ls@4js.com>
+Date: Fri, 17 May 2024 23:42:52 +0200
+Subject: [PATCH] POC for notifychildren frontcall
+
+For now only browserMultiPageStyle is supported.
+Also no data passing from the app sending the notification yet implemented.
+---
+ src/js/base/services/frontcall/standard.js | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+diff --git a/src/js/base/services/frontcall/standard.js b/src/js/base/services/frontcall/standard.js
+index cfc882c8bd..07b51143e3 100644
+--- a/src/js/base/services/frontcall/standard.js
++++ b/src/js/base/services/frontcall/standard.js
+@@ -504,6 +504,21 @@ modulum('FrontCallService.modules.standard', ['FrontCallService'],
+           return undefined;
+         }
+         return [false];
++      },
++      //TODO: append data in the child apps for retrieval upon notificationpushed
++      notifyChildren: function(/*data*/) {
++        var cnt=0;
++        const mwdata=window._multiWindowData;
++        if (mwdata) {
++          for(var i=0;i<mwdata.directChildren.length;i++) {
++            const win=mwdata.directChildren[i];
++            if (win.gbc) {
++              win.gbc.NativeService.onNativeAction({name:"notificationpushed"});
++              cnt++;
++            }
++          }
++        }
++        return [cnt];
+       }
+     };
+   }
+-- 
+2.39.3 (Apple Git-145)
+
