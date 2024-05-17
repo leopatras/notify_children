@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <resources>
+    <color name="compact_primary">#ff1976d2</color>
+    <color name="compact_primary_text">#ff212121</color>
+    <color name="compact_primary_dark">#ff1976d2</color>
+    <color name="compact_accent">#ff1976d2</color>
+    <color name="compact_activated_background">#ffffffff</color>
+    <color name="compact_window_background">#fff5f5f5</color>
+    <color name="compact_navigation_bar_background">#ff1976d2</color>
+    <color name="compact_action_bar_text">#ffffffff</color>
+    
+    <style name="compact_style" parent="GeneroMobile.Theme.Client.Browser">
+        <item name="colorPrimary">@color/compact_primary</item>
+        <item name="colorPrimaryDark">@color/compact_primary_dark</item>
+        <item name="actionModeBackground">@color/compact_primary</item>
+        <item name="colorAccent">@color/compact_accent</item>
+        <item name="colorControlHighlight">@color/compact_accent</item>
+        <item name="colorControlActivated">@color/compact_accent</item>
+        <item name="android:activatedBackgroundIndicator">@color/compact_activated_background</item>
+        <item name="android:windowBackground">@color/compact_window_background</item>
+        <item name="android:navigationBarColor">@color/compact_navigation_bar_background</item>
+        <item name="android:textColorPrimary">@color/compact_primary_text</item>
+        <item name="actionMenuTextColor">@color/compact_action_bar_text</item>
+        <item name="android:actionMenuTextColor">@color/compact_action_bar_text</item>
+        <item name="actionBarTheme">@style/compact_style.Theme.ActionBar</item>
+    </style>
+    <style name="compact_style.Theme.ActionBar" parent="GeneroMobile.Theme.ActionBar">
+      <item name="android:textColorPrimary">@color/compact_action_bar_text</item>
+      <item name="colorControlNormal">@color/compact_action_bar_text</item>
+    </style>
+  </resources>

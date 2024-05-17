@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <resources>
+    <color name="ur_compact_dark_primary">#ff1976d2</color>
+    <color name="ur_compact_dark_primary_text">#deffffff</color>
+    <color name="ur_compact_dark_primary_dark">#ff1976d2</color>
+    <color name="ur_compact_dark_accent">#ff1976d2</color>
+    <color name="ur_compact_dark_activated_background">#ffffffff</color>
+    <color name="ur_compact_dark_window_background">#ff181818</color>
+    <color name="ur_compact_dark_navigation_bar_background">#ff1976d2</color>
+    <color name="ur_compact_dark_action_bar_text">#ffffffff</color>
+    
+    <style name="ur_compact_dark_style" parent="GeneroMobile.Theme.Client.Browser">
+        <item name="colorPrimary">@color/ur_compact_dark_primary</item>
+        <item name="colorPrimaryDark">@color/ur_compact_dark_primary_dark</item>
+        <item name="actionModeBackground">@color/ur_compact_dark_primary</item>
+        <item name="colorAccent">@color/ur_compact_dark_accent</item>
+        <item name="colorControlHighlight">@color/ur_compact_dark_accent</item>
+        <item name="colorControlActivated">@color/ur_compact_dark_accent</item>
+        <item name="android:activatedBackgroundIndicator">@color/ur_compact_dark_activated_background</item>
+        <item name="android:windowBackground">@color/ur_compact_dark_window_background</item>
+        <item name="android:navigationBarColor">@color/ur_compact_dark_navigation_bar_background</item>
+        <item name="android:textColorPrimary">@color/ur_compact_dark_primary_text</item>
+        <item name="actionMenuTextColor">@color/ur_compact_dark_action_bar_text</item>
+        <item name="android:actionMenuTextColor">@color/ur_compact_dark_action_bar_text</item>
+        <item name="actionBarTheme">@style/ur_compact_dark_style.Theme.ActionBar</item>
+    </style>
+    <style name="ur_compact_dark_style.Theme.ActionBar" parent="GeneroMobile.Theme.ActionBar">
+      <item name="android:textColorPrimary">@color/ur_compact_dark_action_bar_text</item>
+      <item name="colorControlNormal">@color/ur_compact_dark_action_bar_text</item>
+    </style>
+  </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <resources>
+    <color name="default_primary">#ff1976d2</color>
+    <color name="default_primary_text">#ff212121</color>
+    <color name="default_primary_dark">#ff1976d2</color>
+    <color name="default_accent">#ff1976d2</color>
+    <color name="default_activated_background">#ffffffff</color>
+    <color name="default_window_background">#fff5f5f5</color>
+    <color name="default_navigation_bar_background">#ff1976d2</color>
+    <color name="default_action_bar_text">#ffffffff</color>
+    
+    <style name="default_style" parent="GeneroMobile.Theme.Client.Browser">
+        <item name="colorPrimary">@color/default_primary</item>
+        <item name="colorPrimaryDark">@color/default_primary_dark</item>
+        <item name="actionModeBackground">@color/default_primary</item>
+        <item name="colorAccent">@color/default_accent</item>
+        <item name="colorControlHighlight">@color/default_accent</item>
+        <item name="colorControlActivated">@color/default_accent</item>
+        <item name="android:activatedBackgroundIndicator">@color/default_activated_background</item>
+        <item name="android:windowBackground">@color/default_window_background</item>
+        <item name="android:navigationBarColor">@color/default_navigation_bar_background</item>
+        <item name="android:textColorPrimary">@color/default_primary_text</item>
+        <item name="actionMenuTextColor">@color/default_action_bar_text</item>
+        <item name="android:actionMenuTextColor">@color/default_action_bar_text</item>
+        <item name="actionBarTheme">@style/default_style.Theme.ActionBar</item>
+    </style>
+    <style name="default_style.Theme.ActionBar" parent="GeneroMobile.Theme.ActionBar">
+      <item name="android:textColorPrimary">@color/default_action_bar_text</item>
+      <item name="colorControlNormal">@color/default_action_bar_text</item>
+    </style>
+  </resources>

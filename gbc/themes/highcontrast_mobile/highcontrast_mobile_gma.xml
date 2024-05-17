@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <resources>
+    <color name="highcontrast_mobile_primary">#ff0c4399</color>
+    <color name="highcontrast_mobile_primary_text">#ff212121</color>
+    <color name="highcontrast_mobile_primary_dark">#ff0c4399</color>
+    <color name="highcontrast_mobile_accent">#ff0c4399</color>
+    <color name="highcontrast_mobile_activated_background">#ffffffff</color>
+    <color name="highcontrast_mobile_window_background">#fff5f5f5</color>
+    <color name="highcontrast_mobile_navigation_bar_background">#ff0c4399</color>
+    <color name="highcontrast_mobile_action_bar_text">#ffffffff</color>
+    
+    <style name="highcontrast_mobile_style" parent="GeneroMobile.Theme.Client.Browser">
+        <item name="colorPrimary">@color/highcontrast_mobile_primary</item>
+        <item name="colorPrimaryDark">@color/highcontrast_mobile_primary_dark</item>
+        <item name="actionModeBackground">@color/highcontrast_mobile_primary</item>
+        <item name="colorAccent">@color/highcontrast_mobile_accent</item>
+        <item name="colorControlHighlight">@color/highcontrast_mobile_accent</item>
+        <item name="colorControlActivated">@color/highcontrast_mobile_accent</item>
+        <item name="android:activatedBackgroundIndicator">@color/highcontrast_mobile_activated_background</item>
+        <item name="android:windowBackground">@color/highcontrast_mobile_window_background</item>
+        <item name="android:navigationBarColor">@color/highcontrast_mobile_navigation_bar_background</item>
+        <item name="android:textColorPrimary">@color/highcontrast_mobile_primary_text</item>
+        <item name="actionMenuTextColor">@color/highcontrast_mobile_action_bar_text</item>
+        <item name="android:actionMenuTextColor">@color/highcontrast_mobile_action_bar_text</item>
+        <item name="actionBarTheme">@style/highcontrast_mobile_style.Theme.ActionBar</item>
+    </style>
+    <style name="highcontrast_mobile_style.Theme.ActionBar" parent="GeneroMobile.Theme.ActionBar">
+      <item name="android:textColorPrimary">@color/highcontrast_mobile_action_bar_text</item>
+      <item name="colorControlNormal">@color/highcontrast_mobile_action_bar_text</item>
+    </style>
+  </resources>

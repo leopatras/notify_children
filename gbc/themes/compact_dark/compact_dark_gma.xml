@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <resources>
+    <color name="compact_dark_primary">#ff1976d2</color>
+    <color name="compact_dark_primary_text">#deffffff</color>
+    <color name="compact_dark_primary_dark">#ff1976d2</color>
+    <color name="compact_dark_accent">#ff1976d2</color>
+    <color name="compact_dark_activated_background">#ffffffff</color>
+    <color name="compact_dark_window_background">#ff181818</color>
+    <color name="compact_dark_navigation_bar_background">#ff1976d2</color>
+    <color name="compact_dark_action_bar_text">#ffffffff</color>
+    
+    <style name="compact_dark_style" parent="GeneroMobile.Theme.Client.Browser">
+        <item name="colorPrimary">@color/compact_dark_primary</item>
+        <item name="colorPrimaryDark">@color/compact_dark_primary_dark</item>
+        <item name="actionModeBackground">@color/compact_dark_primary</item>
+        <item name="colorAccent">@color/compact_dark_accent</item>
+        <item name="colorControlHighlight">@color/compact_dark_accent</item>
+        <item name="colorControlActivated">@color/compact_dark_accent</item>
+        <item name="android:activatedBackgroundIndicator">@color/compact_dark_activated_background</item>
+        <item name="android:windowBackground">@color/compact_dark_window_background</item>
+        <item name="android:navigationBarColor">@color/compact_dark_navigation_bar_background</item>
+        <item name="android:textColorPrimary">@color/compact_dark_primary_text</item>
+        <item name="actionMenuTextColor">@color/compact_dark_action_bar_text</item>
+        <item name="android:actionMenuTextColor">@color/compact_dark_action_bar_text</item>
+        <item name="actionBarTheme">@style/compact_dark_style.Theme.ActionBar</item>
+    </style>
+    <style name="compact_dark_style.Theme.ActionBar" parent="GeneroMobile.Theme.ActionBar">
+      <item name="android:textColorPrimary">@color/compact_dark_action_bar_text</item>
+      <item name="colorControlNormal">@color/compact_dark_action_bar_text</item>
+    </style>
+  </resources>
