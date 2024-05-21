@@ -17,7 +17,7 @@ fglwebrun:
 	git clone https://github.com/FourjsGenero/tool_fglwebrun.git fglwebrun
 
 webrun: all fglwebrun
-	~/w/fglwebrun/fglwebrun notifych
+	fglwebrun/fglwebrun notifych
 
 clean:
 	rm -f *.42?
